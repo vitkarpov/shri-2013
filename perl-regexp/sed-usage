@@ -1,0 +1,3 @@
+# usr/bin/bash
+
+sed -i .origin '/<title>/s/ШРИ/КИТ/' *html
