@@ -1,3 +1,3 @@
 # usr/bin/bash
 
-sed -i .origin '/<title>/s/ШРИ/КИТ/' *html
+find . -type f -iname '*.html' -print0 | xargs -0 sed -i .bak 's/\(<title>.*\)ШРИ\(.*<\/title>\)/\1КИТ\2/'
